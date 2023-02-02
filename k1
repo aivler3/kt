@@ -1,0 +1,20 @@
+N = input()
+j=N
+count = 0
+
+    
+while True:
+    if int(j)<10:
+        j='0'+j
+        
+    i=int(j[0])+int(j[1])
+    j=j[1]+str(i)[-1]
+    
+        
+    count += 1
+    
+    if j==N:
+        break
+    
+
+print(count)
